@@ -4,12 +4,14 @@ import Grid from './components/Grid.jsx';
 import PicCarousel from './components/Carousel.jsx'
 import Video from './components/Video.jsx';
 import Footer from './components/Footer.jsx';
+import HeroBanner from './components/HeroBanner.jsx';
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css"
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+        <HeroBanner/>
         <About  />
         <Quote />
         <Grid />
@@ -17,7 +19,6 @@ function App() {
         <Video />
         <Footer />
 
-      </header>
     </div>
   );
 }
