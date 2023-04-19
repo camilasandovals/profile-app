@@ -5,8 +5,8 @@ export default function HeroBanner () {
         <section>
             <Container fluid className="bg-success">
                 <Row>
-                    <Col className="">
-                        Hi
+                    <Col className="text-center">
+                        Hero
                     </Col>
                 </Row>
             </Container>
