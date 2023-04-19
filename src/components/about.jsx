@@ -11,7 +11,7 @@ export default function About() {
                     alt="Camila Sandoval" />
                     </Col>
                     <Col sm={12} md={6}>
-                    <h1> Camila Sandoval </h1>
+                    <h1 className="mt-3"> Camila Sandoval </h1>
                     <h2> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur laboriosam, dolorum, delectus accusantium aspernatur id quis sapiente obcaecati odio neque alias repellendus sequi similique magnam veniam! Magni voluptas id nulla.</h2>
                     </Col>
                 </Row>

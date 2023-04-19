@@ -3,7 +3,7 @@ import { Col, Row, Container } from "react-bootstrap";
 export default function Grid() {
     return (
         <section>
-        <Container className="bg-warning grid-container"> 
+        <Container fluid className="grid-container"> 
             <Row>
                 <Col sm={12} md={4}>
                     <h2>Why BocaCode?</h2>

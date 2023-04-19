@@ -3,7 +3,7 @@ import { Col, Container, Row, Carousel, CarouselItem } from "react-bootstrap";
 export default function PicCarousel () {
     return (
         <section>
-            <Container>
+            <Container className="carousel-container">
                 <Row>
                     <Col className="p-0"> 
                         <Carousel fade>
