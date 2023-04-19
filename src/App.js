@@ -5,8 +5,9 @@ import PicCarousel from './components/Carousel.jsx'
 import Video from './components/Video.jsx';
 import Footer from './components/Footer.jsx';
 import HeroBanner from './components/HeroBanner.jsx';
-import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css"
+import './App.css';
+
 
 function App() {
   return (
