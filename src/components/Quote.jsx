@@ -1,14 +1,30 @@
+import {useState} from "react"
 import { Col, Container, Row } from "react-bootstrap";
 
+const quotes = [
+    { saying: "You have power over your mind - not outside events. Realize this, and you will find strength.", author: "Marcus Aurelius"},
+    { saying: "Evil Never Dies.", author: "Meghann Stamper"},
+    { saying: "Company is like fish, it starts to stink after 3 days.", author: "Benjamin Franklin"},
+  ]
+  
+
 export default function Quote () {
+    const [i, setI] = useState(0)
+
+    const nextQuote = () => {
+        if(i < quotes.length -1) setI(i + 1)
+        else setI(0)
+    }
+
     return (
         <section>
-            <Container className = "quote-container">
+            <Container className = "quote-container"
+            onClick={() => {nextQuote(setI)}}>
             {/* <Container className = "quote-container bg-success"> */}
                 <Row className="text-center">
                     <Col>
-                        <q>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio fuga voluptates deleniti in officiis a, quidem dolores? Praesentium porro iusto enim error sit modi id fuga, qui quibusdam hic deserunt.</q>
-                        <p>Autor</p>
+                        <q>{quotes[i]['saying']}</q>
+                        <p>{quotes[i]['author']}</p>
                     </Col>
                 </Row>
             </Container>
